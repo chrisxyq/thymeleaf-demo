@@ -17,6 +17,17 @@
         <h2 th:text="*{username}"></h2>
         <p th:text="*{age}"></p>
     </div>
+    <th:block th:switch="true">
+        <!--百店寻宝-->
+        <p  th:case="${user.isA}" text="${user.isA}">
+        </p>
+        <!--额外奖励-->
+        <p th:case="${user.isB}" text="${user.isB}">
+        </p>
+        <!--限时特惠-->
+        <p  th:case="${user.isC}" text="${user.isC}">
+        </p>
+    </th:block>
     <!--    th:if-->
     <p th:if="${user.isVip}">会员</p>
     <p th:text="${#dates.format(user.createTime,'yyyy-MM-dd HH:mm')}"></p>

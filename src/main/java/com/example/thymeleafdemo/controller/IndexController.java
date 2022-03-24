@@ -27,6 +27,9 @@ public class IndexController {
         userVO.setCreateTime(new Date());
         userVO.setSex(1);
         userVO.setTags(Arrays.asList("PHP", "Node"));
+        userVO.setIsA(Boolean.FALSE);
+        userVO.setIsB(true);
+        userVO.setIsC(true);
         model.addAttribute("user", userVO);
         return "basic";
     }

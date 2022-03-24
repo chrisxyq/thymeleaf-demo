@@ -13,4 +13,7 @@ public class UserVO {
     private Boolean isVip;
     private Date    createTime;
     private List<String>    tags;
+    private Boolean isA;
+    private Boolean isB;
+    private Boolean isC;
 }
