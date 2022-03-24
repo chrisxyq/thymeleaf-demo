@@ -31,6 +31,7 @@ public class IndexController {
         userVO.setIsB(true);
         userVO.setIsC(true);
         model.addAttribute("user", userVO);
+        model.addAttribute("htmlcontent","<div>html内容</div>");
         return "basic";
     }
 }

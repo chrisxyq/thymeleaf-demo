@@ -28,6 +28,7 @@
         <p  th:case="${user.isC}" text="${user.isC}">
         </p>
     </th:block>
+    <div th:utext="${htmlcontent}"></div>
     <!--    th:if-->
     <p th:if="${user.isVip}">会员</p>
     <p th:text="${#dates.format(user.createTime,'yyyy-MM-dd HH:mm')}"></p>
